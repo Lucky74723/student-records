@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/student-records/static/css/main.2ef3891c.css",
-    "main.js": "/student-records/static/js/main.b7f96793.js",
-    "static/js/204.0e2366f2.chunk.js": "/student-records/static/js/204.0e2366f2.chunk.js",
-    "static/js/12.7d465c07.chunk.js": "/student-records/static/js/12.7d465c07.chunk.js",
-    "static/js/784.89624284.chunk.js": "/student-records/static/js/784.89624284.chunk.js",
-    "static/js/453.bea66239.chunk.js": "/student-records/static/js/453.bea66239.chunk.js",
+    "main.js": "/student-records/static/js/main.b0c589bb.js",
+    "static/js/1.3f422286.chunk.js": "/student-records/static/js/1.3f422286.chunk.js",
+    "static/js/425.9fd7c59b.chunk.js": "/student-records/static/js/425.9fd7c59b.chunk.js",
+    "static/js/196.18a52598.chunk.js": "/student-records/static/js/196.18a52598.chunk.js",
+    "static/js/453.5e560239.chunk.js": "/student-records/static/js/453.5e560239.chunk.js",
     "static/media/fa-solid-900.ttf": "/student-records/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/fa-brands-400.ttf": "/student-records/static/media/fa-brands-400.1815e00441357e01619e.ttf",
     "static/media/fa-solid-900.woff2": "/student-records/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
@@ -16,13 +16,13 @@
     "static/media/fa-v4compatibility.woff2": "/student-records/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/student-records/index.html",
     "main.2ef3891c.css.map": "/student-records/static/css/main.2ef3891c.css.map",
-    "main.b7f96793.js.map": "/student-records/static/js/main.b7f96793.js.map",
-    "204.0e2366f2.chunk.js.map": "/student-records/static/js/204.0e2366f2.chunk.js.map",
-    "784.89624284.chunk.js.map": "/student-records/static/js/784.89624284.chunk.js.map",
-    "453.bea66239.chunk.js.map": "/student-records/static/js/453.bea66239.chunk.js.map"
+    "main.b0c589bb.js.map": "/student-records/static/js/main.b0c589bb.js.map",
+    "1.3f422286.chunk.js.map": "/student-records/static/js/1.3f422286.chunk.js.map",
+    "196.18a52598.chunk.js.map": "/student-records/static/js/196.18a52598.chunk.js.map",
+    "453.5e560239.chunk.js.map": "/student-records/static/js/453.5e560239.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2ef3891c.css",
-    "static/js/main.b7f96793.js"
+    "static/js/main.b0c589bb.js"
   ]
 }
