@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+/* ===== Global Styles ===== */
+:root {
+  --primary-color: #28a745;
+  --secondary-color: #007bff;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --sidebar-bg: #8995a0;
+  --sidebar-text: #0a0a0a;
+  --white: #fff;
+  --error-color: red;
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ===== Layout and Containers ===== */
+.app-container {
+  display: flex;
+  transition: transform 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
+  width: 250px;
+  background-color: var(--sidebar-bg);
+  color: var(--white);
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: width 0.3s ease;
+}
+
+.main-content {
+  margin-left: 270px;
+  padding: 20px;
+  flex-grow: 1;
+  width: calc(100% - 270px);
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3 {
+  color: var(--text-color);
+}
+
+.sidebar h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* ===== Navigation ===== */
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+  color: var(--sidebar-text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+.sidebar nav ul li a svg {
+  margin-right: 10px;
+}
+
+/* ===== Forms ===== */
+.form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+}
+
+input, select, textarea, button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa;
+}
+
+/* ===== Error Messages ===== */
+.error {
+  color: var(--error-color);
+  margin-bottom: 20px;
+}
+
+/* ===== Alumni Section ===== */
+.alumni-container {
+  margin-top: 20px;
+}
+
+.alumni-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.alumni-container ul li {
+  margin-bottom: 10px;
+}
+
+.alumni-container ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.alumni-container ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Attendance Records ===== */
+.attendance-records {
+  margin-top: 20px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.attendance-records ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.attendance-records ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.attendance-records ul li:last-child {
+  border-bottom: none;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: height 0.3s ease;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+    transition: padding 0.3s ease;
   }
 }
